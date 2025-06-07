@@ -70,8 +70,9 @@ amount = principle * (1 + rate / 100) ** time
 interest = amount - principle
 
 # Output results
-print(f"\nPrincipal: ksh.{principle:.2f}")
+print(f"\nPrincipal: Ksh.{principle:.2f}")
 print(f"Rate: {rate:.2f}%")
-print(f"Time: {time} years")
-print(f"Compound Interest: ksh.{interest:.2f}")
-print(f"Total Amount: ksh.{amount:.2f}")
+print(f"Time: {time} year{'s' if time > 2 else ''}")
+print(f"Compound Interest: Ksh.{interest:.2f}")
+print(f"Total Amount: Ksh.{amount:.2f}")
+
